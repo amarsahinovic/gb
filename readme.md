@@ -1,7 +1,7 @@
 Goto Bookmark
 =============
 
-Simple bookmarks for shell users, inspired by http://bitbucket.org/sjl/t/
+Simple command-line directory bookmarks manager, inspired by http://bitbucket.org/sjl/t/
 
 Setup instructions
 ------------------

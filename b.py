@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""gb (goto bookmark) is a simple bookmarks script for shell users.
+"""gb (goto bookmark) is a simple command-line directory bookmarks manager.
 
 Inspired by: http://bitbucket.org/sjl/t/
 
