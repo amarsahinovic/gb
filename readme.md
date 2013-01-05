@@ -20,7 +20,7 @@ Do not add trailing slash to the GB_DIR variable. You may need to login again to
 Short usage instuctions
 -----------------------
 
-Use `b add` to save current directoy to bookmarks with current directory name as the bookmark name.
+Use `b add` to save current directory to bookmarks with current directory name as the bookmark name.
 Use `g name` to jump to that directory from any other directory.
 
 Typical usage
