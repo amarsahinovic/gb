@@ -186,12 +186,9 @@ def _make_parser():
     subparsers = parser.add_subparsers(help='commands', dest='command')
 
     add_parser = subparsers.add_parser('add', help='Add (or update) bookmark')
-    add_parser.add_argument('-u', help='Update bookmark', action='store_true',
-                            dest='update')
-    add_parser.add_argument('name', nargs='?',
-                            default=os.path.split(os.getcwd())[-1],
+    add_parser.add_argument('-u', help='Update bookmark', action='store_true', dest='update')
+    add_parser.add_argument('name', nargs='?', default=os.path.split(os.getcwd())[-1],
                             help='bookmark name (current directory name if empty)')
-
     add_parser.add_argument('path', nargs='*', default=[os.getcwd()],
                             help='bookmark path (current path if empty)')
 
@@ -203,18 +200,16 @@ def _make_parser():
     del_parser.add_argument('name', help='bookamark name')
 
     list_parser = subparsers.add_parser('list', help='List bookmark(s)')
-    list_parser.add_argument('name', help='bookmark name (list all if empty)',
-                             nargs='?')
+    list_parser.add_argument('name', help='bookmark name (list all if empty)', nargs='?')
 
-    nuke_parser = subparsers.add_parser('nuke',
-                                        help='nuke it from orbit (delete all)')
+    nuke_parser = subparsers.add_parser('nuke', help='nuke it from orbit (delete all)')
     nuke_parser.add_argument('--from-orbit', help="nuke location",
                              required=True, action="store_true")
     return parser
 
 
 def _main():
-    """Stuff happens here."""
+
     parser = _make_parser()
     args = parser.parse_args()
 
